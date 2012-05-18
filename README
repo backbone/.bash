@@ -1,0 +1,16 @@
+# Create ~/.bash_profile
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+# Create ~/.bashrc file with contents below.
+
+#!/bin/bash
+
+BDOTDIR=~/.bash
+
+source $BDOTDIR/constants.sh
+for rc in $BDOTDIR/*.sh
+do
+    source $rc
+done
+unset rc
