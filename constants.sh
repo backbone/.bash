@@ -11,3 +11,5 @@ HISTIGNORE="&:ls:[bf]g:exit: cd \"\`*: PROMPT_COMMAND=\'*:cd \'/*"
 export LESS=' -R '
 export PROMPT_COMMAND='history -a'
 [ -x /usr/bin/src/hilite-lesspipe.sh ] && export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
+
+unset DBUS_SESSION_BUS_ADDRESS
