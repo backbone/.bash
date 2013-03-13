@@ -22,7 +22,7 @@ alias rmdir='rmdir -v'
 alias fs='du -shcx * .[^.]* 2>/dev/null | sort -h'
 which sudo &>/dev/null && alias krnlconfig="sudo make MENUCONFIG_MODE=single_menu MENUCONFIG_COLOR=mono menuconfig"
 which valgrind &>/dev/null && alias valgrind='valgrind --tool=callgrind'
-which cgdb &>/dev/null && alias cgdb='LANG=ru_RU.koi8-r cgdb'
+which cgdb &>/dev/null && alias cgdb='LANG=ru_RU.koi8-r TERM=screen cgdb'
 which rsync &>/dev/null && alias cpb='rsync --progress -h' \
                         && alias cpbs='rsync --progress -h -rax --delete-excluded'
 which alsamixer &>/dev/null && alias alsamixer='alsamixer -g' && alias equilizer='alsamixer -D equal'
