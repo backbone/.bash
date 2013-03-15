@@ -13,3 +13,5 @@ export PROMPT_COMMAND='history -a'
 [ -x /usr/bin/src/hilite-lesspipe.sh ] && export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
 
 unset DBUS_SESSION_BUS_ADDRESS
+
+eval `dircolors -b ~/.dircolors`
