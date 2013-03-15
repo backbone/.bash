@@ -14,4 +14,5 @@ export PROMPT_COMMAND='history -a'
 
 unset DBUS_SESSION_BUS_ADDRESS
 
-eval `dircolors -b ~/.dircolors`
+[[ -f $HOME/.dircolors ]] && eval $(dircolors -b $HOME/.dircolors)
+[[ -n "$DISPLAY" ]] && [[ -f $HOME/.dircolors_256 ]] && eval $(dircolors -b $HOME/.dircolors_256)
