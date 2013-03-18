@@ -14,5 +14,8 @@ export PROMPT_COMMAND='history -a'
 
 unset DBUS_SESSION_BUS_ADDRESS
 
-[[ -f $HOME/.dircolors ]] && eval $(dircolors -b $HOME/.dircolors)
-[[ -n "$DISPLAY" ]] && [[ -f $HOME/.dircolors_256 ]] && eval $(dircolors -b $HOME/.dircolors_256)
+if [[ "linux" == "$TERM" && -f $HOME/.dircolors ]]; then
+    eval $(dircolors -b $HOME/.dircolors)
+elif [[ "linux" != "$TERM" &&  -f $HOME/.dircolors_256 ]]; then
+    eval $(dircolors -b $HOME/.dircolors_256)
+fi
