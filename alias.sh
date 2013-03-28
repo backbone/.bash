@@ -20,7 +20,7 @@ alias chgrp='chgrp -v'
 alias mkdir='mkdir -v'
 alias rmdir='rmdir -v'
 alias fs='du -shcx * .[^.]* 2>/dev/null | sort -h'
-which sudo &>/dev/null && alias krnlconfig="sudo TERM=screen-256color make MENUCONFIG_MODE=single_menu MENUCONFIG_COLOR=mono menuconfig"
+which sudo &>/dev/null && alias krnlconfig="sudo TERM=screen make MENUCONFIG_MODE=single_menu MENUCONFIG_COLOR=mono menuconfig"
 which valgrind &>/dev/null && alias valgrind='valgrind --tool=callgrind'
 which cgdb &>/dev/null && alias cgdb='LANG=ru_RU.koi8-r TERM=screen cgdb'
 which rsync &>/dev/null && alias cpb='rsync --progress -h' \
