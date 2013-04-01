@@ -48,3 +48,4 @@ fi
 which iconv &>/dev/null && alias cp1251toUTF8='iconv -f cp1251 -t utf8'
 which eix &>/dev/null && alias eix='TERM=screen eix'
 which genkernel &>/dev/null && alias genkernel='TERM=screen genkernel'
+which htop &>/dev/null && alias htop='TERM=screen htop'
