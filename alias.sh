@@ -46,6 +46,13 @@ if [ `which grc 2>/dev/null` ]; then
 	alias ping='grc ping'
 fi
 which iconv &>/dev/null && alias cp1251toUTF8='iconv -f cp1251 -t utf8'
+
 which eix &>/dev/null && alias eix='TERM=screen eix'
 which vim &>/dev/null && alias vim='TERM=xterm-256color vim'
+which vim &>/dev/null && alias svim='sudo TERM=xterm-256color vim'
+alias v='vim'
+alias sv='svim'
 which mc &>/dev/null && alias mc='TERM=xterm-256color mc'
+which mc &>/dev/null && alias smc='sudo TERM=xterm-256color mc'
+alias m='mc'
+alias sm='smc'
