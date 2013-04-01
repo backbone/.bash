@@ -20,9 +20,9 @@ alias chgrp='chgrp -v'
 alias mkdir='mkdir -v'
 alias rmdir='rmdir -v'
 alias fs='du -shcx * .[^.]* 2>/dev/null | sort -h'
-which sudo &>/dev/null && alias krnlconfig="sudo TERM=screen make MENUCONFIG_MODE=single_menu MENUCONFIG_COLOR=mono menuconfig"
+which sudo &>/dev/null && alias krnlconfig="sudo make MENUCONFIG_MODE=single_menu MENUCONFIG_COLOR=mono menuconfig"
 which valgrind &>/dev/null && alias valgrind='valgrind --tool=callgrind'
-which cgdb &>/dev/null && alias cgdb='LANG=ru_RU.koi8-r TERM=screen cgdb'
+which cgdb &>/dev/null && alias cgdb='LANG=ru_RU.koi8-r cgdb'
 which rsync &>/dev/null && alias cpb='rsync --progress -h' \
                         && alias cpbs='rsync --progress -h -rax --delete-excluded'
 which alsamixer &>/dev/null && alias alsamixer='alsamixer -g' && alias equilizer='alsamixer -D equal'
@@ -46,6 +46,6 @@ if [ `which grc 2>/dev/null` ]; then
 	alias ping='grc ping'
 fi
 which iconv &>/dev/null && alias cp1251toUTF8='iconv -f cp1251 -t utf8'
-which eix &>/dev/null && alias eix='TERM=screen eix'
-which genkernel &>/dev/null && alias genkernel='TERM=screen genkernel'
-which htop &>/dev/null && alias htop='TERM=screen htop'
+which eix &>/dev/null && alias eix='TERM=screen-256color eix'
+which vim &>/dev/null && alias vim='TERM=xterm-256color vim'
+which mc &>/dev/null && alias mc='TERM=xterm-256color mc'
