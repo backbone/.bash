@@ -117,3 +117,4 @@ which mc &>/dev/null && {
     alias sm='smc'
 }
 which git &>/dev/null && alias git='TERM=xterm-256color git'
+which tmux &>/dev/null && alias t=tmux
