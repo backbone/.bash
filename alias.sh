@@ -11,9 +11,9 @@ alias llha='llah'
 alias fls="fls -rd"
 
 # file operations
-alias cp='nocorrect cp --verbose --preserve=all'
-alias mv='nocorrect mv --verbose'
-alias rm='nocorrect rm -v'
+alias cp='cp --verbose --preserve=all'
+alias mv='mv --verbose'
+alias rm='rm -v'
 alias ln='ln -vi'
 alias chmod='chmod -v'
 alias chown='chown -v'
@@ -62,9 +62,6 @@ which grc &>/dev/null && {
 alias killall="killall --interactive --verbose"
 
 alias free="free -t -h"
-
-which git &>/dev/null && alias git="nocorrect git"
-which hg &>/dev/null && alias hg="nocorrect hg"
 
 which scrot &>/dev/null && alias scrot="scrot --border --count --quality 75 $HOME'/screenshots/%d-%b-%y_%H-%M-%S_\$wx\$h.png' --exec 'du -h \$f'"
 
