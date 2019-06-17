@@ -19,4 +19,9 @@ if [ `which hg 2>/dev/null` ]; then
                         fi
                 fi
         }
+else
+        __hg_ps1 ()
+        {
+                printf ""
+        }
 fi
