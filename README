@@ -5,12 +5,18 @@
 # Create ~/.bashrc file with contents below.
 
 #!/bin/bash
+# ~/.bashrc
 
 BDOTDIR=~/.bash
 
-source $BDOTDIR/constants.sh
+[ -x $BDOTDIR/const.sh ] && source $BDOTDIR/const.sh
+[ -x $BDOTDIR/local_const.sh ] && source $BDOTDIR/local_const.sh
 for rc in $BDOTDIR/*.sh
 do
-    source $rc
+    [ -x $rc ] && source $rc
 done
 unset rc
+
+[ -x $BDOTDIR/local.sh ] && source $BDOTDIR/local.sh
+
+unset BDOTDIR
