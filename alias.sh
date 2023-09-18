@@ -116,3 +116,5 @@ which mc &>/dev/null && {
 }
 which git &>/dev/null && alias git='TERM=xterm-256color git'
 which tmux &>/dev/null && alias t=tmux
+
+which ssh &>/dev/null && alias sshnocheck='ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no"'
