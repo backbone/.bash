@@ -4,6 +4,7 @@ umask 0002
 shopt -s histappend
 shopt -s cmdhist
 shopt -s cdspell
+shopt -s globstar
 export PATH="$PATH:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin:~/bin:~/scripts"
 [ -x /usr/bin/vim ] && export EDITOR=/usr/bin/vim
 export HISTCONTROL="ignoredupes"
